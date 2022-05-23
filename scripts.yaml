@@ -1,0 +1,8 @@
+scripts:
+  start:dev: 
+    cmd: deno run --allow-net src/main.ts
+    watch: true
+  test:
+    cmd: deno test
+  build:docker:
+    cmd: docker build -t example .
